@@ -23,7 +23,7 @@ for(Map<String,String> map : list){
 %>
 <tr>
 <td><%=map.get("ciNum") %></td>
-<td><a href="/class-info/view"><%=map.get<%=map.get("ciName") %></td>
+<td><a href="/class-info/view"><%=map.get("ciNum")%><%=map.get("ciName") %></td>
 <td><%=map.get("ciDesc") %></td>
 </tr>
 <%
