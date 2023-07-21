@@ -10,22 +10,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3>난 강의 리스트</h3>
+<h3>뷰페이지</h3>
 
-<table border = "">
-<tr>
-<th>번호</th>
-<th>번호</th>
-<th>번호</th>
-</tr>
-	<c:forEach items="${classInfoList }" var="classInfo">
-<tr>
-<td>${classInfo.ciNum }</td>
-<td>${classInfo.ciName }</td>
-<td>${classInfo.ciDesc }</td>
-</tr>	
+<table border="">
+    <tr>
+        <th>번호</th>
+        <th>아이디</th>
+        <th>비밀번호</th>
+        <th>이름</th>
+    </tr>
+	<c:forEach items="${userInfoList}" var="userInfo">
+	<tr>
+	<td>${userInfo.uiNum}</td>
+	<td>${userInfo.uiName}</td>
+	<td>${userInfo.uiId}</td>
+	<td>${userInfo.uiPwd}</td>
+	</tr>
+	
 	</c:forEach>
-
 </table>
 </body>
 </html>
