@@ -9,7 +9,7 @@
 <body>
 <div>
 ${msg}<br>
-<button onclick="location.href='${url}'">확인</button>
+<button onclick="location.href='${uri}'">확인</button>
 </div>
 </body>
 </html>
