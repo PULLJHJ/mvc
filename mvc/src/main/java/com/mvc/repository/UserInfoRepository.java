@@ -101,7 +101,7 @@ public class UserInfoRepository {
 		String sql = "DELETE FROM USER_INFO WHERE UI_NUM=?";
 		Connection con = DBCon.getCon();
 		try {
-			PreparedStatement ps = con.prepareStatement(sql);
+			PreparedStatement ps = con.prepareStatement(sql); //이 부분 오류있어서 안되는거임
 			ps.setString(1, uiNum);
 			return ps.executeUpdate();
 		} catch (SQLException e) {
