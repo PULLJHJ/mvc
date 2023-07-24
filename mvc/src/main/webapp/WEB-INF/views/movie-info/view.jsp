@@ -10,27 +10,27 @@
 <table border="1">
 	<tr>
 		<th>번호</th>
-		<td>${movieInfo.uiNum}</td>
+		<td>${movieInfo.miNum}</td>
 	</tr>
 	<tr>
 		<th>타이틀</th>
-		<td>${movieInfo.uiTitle}</td>
+		<td>${movieInfo.miTitle}</td>
 	</tr>
 	<tr>
 		<th>설명</th>
-		<td>${movieInfo.uiDesc}</td>
+		<td>${movieInfo.miDesc}</td>
 	</tr>
 	<tr>
 		<th>장르</th>
-		<td>${movieInfo.uiGenre}</td>
+		<td>${movieInfo.miGenre}</td>
 	</tr>
 	<tr>
 		<th>시간</th>
-		<td>${movieInfo.uiCredat}</td>
+		<td>${movieInfo.miCredat}</td>
 	</tr>
 	<tr>
 		<th>조회수</th>
-		<td>${movieInfo.uiCnt}</td>
+		<td>${movieInfo.miCnt}</td>
 	</tr>
 </table>
 </body>

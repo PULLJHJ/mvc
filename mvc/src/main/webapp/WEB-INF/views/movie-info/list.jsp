@@ -21,7 +21,7 @@
 <c:forEach items="${movieInfoList}" var="movieInfo">
 <tr>
 <td>${movieInfo.miNum}</td>
-<td><a href="/movie-info/view?miNum=${movieInfo.miNum}">${userInfo.uiTitle}</a></td>
+<td><a href="/movie-info/view?miNum=${movieInfo.miNum}">${movieInfo.miTitle}</a></td>
 <td>${movieInfo.miDesc}</td>
 <td>${movieInfo.miGenre}</td>
 <td>${movieInfo.miCredat}</td>

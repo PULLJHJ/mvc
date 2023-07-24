@@ -10,22 +10,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.mvc.common.DBCon;
+
 public class ClassInfoRepository {
 
 	public List<Map<String,String>> selectClassInfoList() {
-		String driverName = "org.mariadb.jdbc.Driver";
-		String url = "jdbc:mariadb://localhost:3306/kd";
-		String user = "root";
-		String pwd = "kd1824java";
-		try {
-			Class.forName(driverName);
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
 		List<Map<String,String>> classInfoList = new ArrayList<>();
 		
 		try {
-			Connection con = DriverManager.getConnection(url, user, pwd);
+			Connection con = DBCon.getCon();
 
 			String sql = "SELECT * FROM CLASS_INFO WHERE 1=1";
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -46,18 +39,10 @@ public class ClassInfoRepository {
 
 
 	public Map<String,String> selectClassInfo() {
-		String driverName = "org.mariadb.jdbc.Driver";
-		String url = "jdbc:mariadb://localhost:3306/kd";
-		String user = "root";
-		String pwd = "kd1824java";
-		try {
-			Class.forName(driverName);
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
+		
 		
 		try {
-			Connection con = DriverManager.getConnection(url, user, pwd);
+			Connection con = DBCon.getCon();
 
 			String sql = "SELECT * FROM CLASS_INFO WHERE 1=1";
 			PreparedStatement ps = con.prepareStatement(sql);
